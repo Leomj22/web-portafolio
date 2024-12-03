@@ -1,0 +1,501 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Arial, sans-serif; /* Aplica Arial Black y una fuente alternativa */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f89737;  /* Naranja claro */
+}
+
+section h2 p {
+    background-color: #0c0c0c
+}
+
+body {
+    font-family: 'Arial Black', Arial, sans-serif;
+    background-color: #f89737;  /* Naranja claro */
+    color: #0e0d0d;
+    line-height: 1.6;
+}
+
+
+/* Estilo del encabezado */
+header {
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+header p {
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #f3eeee;
+    font-family: 'Arial', sans-serif; /* Cambia a Brooklyn si tienes esa fuente instalada */
+    font-size: 2.2rem; /* Tamaño más grande para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    top: 20px; /* Sube el menú */
+}
+
+header div {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    padding: 20px;
+    gap: 20px; /* Añade un pequeño espacio entre la imagen y el texto */
+}
+
+header div img {
+    
+    width: 150px; /* Reduce el tamaño de la imagen a 150px (ajústalo según tus necesidades) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 30px; /* Añade un margen de 30px entre la imagen y el texto */
+}
+
+header div h1 {
+    font-size: 2.5rem; /* Tamaño del texto del nombre */
+    color: #fff; /* Color del texto */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+/* Estilo de la sección principal */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, input, textarea {
+    width: 80%;
+    margin: 10px 0;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer div a {
+    margin-top: 20px;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px; /* Ajusta el ancho del carrusel */
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: none; /* Oculta todas las imágenes por defecto */
+}
+
+.carousel img.active {
+    display: block; /* Muestra solo la imagen activa */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+/* Estilos específicos para la sección de horarios */
+#horarios {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#horarios h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+#horarios p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#horarios span {
+    font-weight: bold;
+    color: #333;
+}
+
+#lista-horarios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-horarios li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#lista-horarios li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+#lista-horarios li:hover {
+    background-color: #e0e0e0;
+}
+
+.hora-salida, .hora-llegada {
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+.ruta {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo para la sección ¿Quiénes Somos? */
+#quienes-somos {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.quienes-somos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagen {
+    flex: 1;
+    text-align: center; /* Centra la imagen dentro del contenedor de imagen */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: añade bordes redondeados a la imagen */
+}
+
+.descripcion {
+    flex: 2;
+    text-align: right; /* Alinea el texto hacia la derecha */
+    padding: 20px; /* Espacio interno para el texto */
+    background-color: #faf9f9; /* Fondo blanco para el texto */
+    border-radius: 8px; /* Opcional: añade bordes redondeados al contenedor de texto */
+}
+
+/* Asegurarse de que el contenedor se ajuste al tamaño de la ventana */
+@media (max-width: 768px) {
+    .quienes-somos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .imagen {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo para el contenedor del mapa */
+#mapa {
+    width: 100%;
+    height: 400px; /* Ajusta la altura del mapa según tus necesidades */
+    border: 1px solid #ddd; /* Añade un borde opcional alrededor del mapa */
+    border-radius: 8px; /* Opcional: añade bordes redondeados al mapa */
+}
+
+/* Estilo para la sección de contacto en el footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer .contacto {
+    margin-top: 10px;
+}
+
+footer .contacto a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+footer .contacto img {
+    margin-right: 10px;
+}
+
+footer .contacto p {
+    margin: 0;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Estilos generales */
+.sobre-mi-container {
+    display: flex; /* Permite que los elementos se alineen en fila */
+    justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.sobre-mi-container .descripcion {
+    display: flex; /* Establece un contenedor flexible para la imagen y el texto */
+    align-items: center; /* Centra la imagen y el texto verticalmente */
+}
+
+.sobre-mi-container .descripcion img {
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 70px; /* Añade espacio entre la imagen y el texto */
+}
+
+.sobre-mi-container .descripcion .texto {
+    max-width: 800px; /* Limita el ancho del texto para evitar que se expanda demasiado */
+}
+
+/* Estilos para el texto */
+.sobre-mi-container .descripcion h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.sobre-mi-container .descripcion h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.sobre-mi-container .descripcion p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #0f0f0f;
+}
+
+/*estilo para el html sobre_mi*/
+
+/* Estilos generales */
+nav ul li a {
+    color: #f3eeee; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Cambia a Brooklyn si tienes esa fuente instalada */
+    font-size: 2.2rem; /* Tamaño más grande para los enlaces */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, text-decoration 0.3s; /* Transición suave para color y subrayado */
+}
+
+/* Al pasar el mouse */
+nav ul li a:hover {
+    color: #ff6600; /* Cambia el color del enlace cuando el mouse pasa sobre él */
+    text-decoration: underline; /* Aplica el subrayado al pasar el mouse */
+}
+
+/* Estilo para los enlaces en el pie de página */
+footer .contacto a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: color 0.3s, text-decoration 0.3s; /* Transición suave para color y subrayado */
+}
+
+footer .contacto a:hover {
+    color: #ff6600; /* Cambia el color cuando el mouse pasa sobre el enlace */
+    text-decoration: underline; /* Aplica subrayado en el pie de página al pasar el mouse */
+}
+
+/* Transición suave para el desplazamiento */
+html {
+    scroll-behavior: smooth; /* Hace que la bajada al footer sea fluida */
+}
+
+/* Estilo general para el carrusel */
+#carrusel {
+    width: 100%;
+    overflow: hidden; /* Esconde el contenido que sobrepasa el contenedor */
+    position: relative;
+}
+
+/* Contenedor de las imágenes */
+.carrusel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Las imágenes del carrusel */
+.carrusel-slide {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Transición suave de 1 segundo */
+}
+
+/* Cada imagen */
+.carrusel-slide img {
+    width: 20%;
+    max-width: 20%; /* Asegura que las imágenes no se distorsionen */
+    height: auto;
+    border-radius: 10px; /* Opcional: Añadir bordes redondeados */
+}
+
+/* Opcional: Estilo para añadir navegación (flechas) */
+.carrusel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carrusel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.carrusel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
